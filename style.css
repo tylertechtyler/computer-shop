@@ -1,0 +1,211 @@
+body {
+    background-image: url(seaside.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media (max-width: 800px) {
+    body {
+        background-size: 100% 100%;
+    }
+}
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+#navbar {
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(2, 90, 38, 0.7);
+    top: 0;
+    left: 0;   
+    width: 100%;
+    height: 35px;
+
+    
+}
+@media (max-width: 800px) {
+    #navbar {
+        justify-content: center;
+        background-color: rgb(2, 90, 38, 0.1);
+    }
+    #navbar > ul {
+        width: 30vw;
+        display: flex;
+        list-style: none;
+        justify-content: start;
+        padding-right: 10px;
+        margin-top: -10px;
+    }
+    nav > ul > li {
+        padding:25px;
+        border: 0.5px solid black;
+        background-color: rgb(6, 155, 68);
+    }
+
+}
+#navbar > ul {
+    width: 30vw;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    padding-right: 10px;
+    top: 0;
+}
+nav > ul > li {
+    padding:25px;
+    border: 0.5px solid black;
+    background-color: rgb(6, 155, 68);
+}
+nav > ul > li:hover {
+    background-color: rgb(83, 233, 220);
+    cursor: pointer;
+}
+
+#about {
+    height: 10vh;
+    text-align: center;
+   /* background-color: darkblue;*/
+}
+#space-below {
+    height: 10vh;
+   /* background-color: darkblue;*/
+}
+
+#container-0 {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}    
+@media (max-width: 800px) {
+    
+    .biopic {
+        grid-column-start: span 2;
+        width: 140%;
+    }
+    .bio {
+        width: 122%;
+    }
+    .biolinks {
+        width: 122%;
+    }
+    #container-p0 {
+        height: 350px;
+    }
+    #projects {
+        display: grid;
+        grid-template-columns: repeat(3, 20vw);
+        grid-template-rows: repeat(4, 25vh);
+        grid-gap: 20px;
+    }
+    .project-tile {
+        height: min-content;
+    }
+    .project-tile2 {
+        height: min-content;
+    }
+    .project-tile3 {
+        height: min-content;
+    }
+}
+#container1 {
+    
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(2, 30vh);
+    background-color: rgba(86, 186, 211, 0.6);
+    grid-column-gap: 10px;
+    
+}
+.biopic {
+    background-image: url(profilepic.jpg);
+    background-size: 100% 100%;
+    grid-row-start: span 2;
+    padding: 10px;
+    border: 1px solid black;
+}
+.bio {
+   /* background-color: rgba(86, 186, 211, 0.6);*/
+    grid-column-start: span 2;
+    padding: 25px;
+    padding-top: 5px;
+    
+    flex-grow: 1;
+   
+}
+.biolinks {
+    
+    grid-column-start: span 2;
+    padding: 25px;
+    display: flex;
+   
+    
+}
+.icons {
+    align-self: flex-end;
+}
+#container-p1 {
+    height: 10vh;
+    text-align: center;
+    /*background-color: darkgreen;*/
+}
+#container-p0 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(2, 25vh);
+    grid-gap: 10px;
+}
+
+.project-tile {
+    background-color: rgba(86, 186, 211, 0.8);
+    grid-row-start: span 2;
+}
+
+.project-1-pic {
+    background-image: url(proj1.png);
+    background-size: 100% 100%;
+    height: 50%;
+}
+.project-info1 {
+    padding: 10px;    
+}
+.project-tile2 {
+    background-color: rgba(86, 186, 211, 0.8);
+    grid-row-start: span 2;
+}
+.project-2-pic {
+    background-image: url(proj2.png);
+    background-size: 100% 100%;
+    height: 50%;
+}
+.project-tile3 {
+    background-color: rgba(86, 186, 211, 0.8);
+    grid-row-start: span 2;
+
+}
+.project-3-pic {
+    background-image: url(proj3.png);
+    background-size: 100% 100%;
+    height: 50%;
+}
+#space-belowp {
+    height: 10vh;
+    /*background-color: darkblue;*/
+    text-align: center;
+    margin-top: 50px;
+}
